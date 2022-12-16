@@ -28,7 +28,7 @@ export default () => {
 
   router.use(passport.initialize())
 
-  router.post('/login', express.json(), ({ body: { username, password } }, res, next) => {
+  router.post('https://flisergio-pokerapp-login.netlify.app/login', express.json(), ({ body: { username, password } }, res, next) => {
     const user = users.find(user => user.id === username && user.password === password)
     if (user) {
       const { id, name } = user
@@ -49,12 +49,12 @@ export default () => {
 
   router.use(passport.authenticate('jwt', {
     session: false,
-    failureRedirect: '/login'
+    failureRedirect: 'https://flisergio-pokerapp-login.netlify.app/login'
   }))
 
   router.use((req, res, next) => {
     if (!req.isAuthenticated()) {
-      res.redirect('/login') // REVISE: *all* requests will be redirected to login page
+      res.redirect('https://flisergio-pokerapp-login.netlify.app/login') // REVISE: *all* requests will be redirected to login page
     } else {
       next()
     }
