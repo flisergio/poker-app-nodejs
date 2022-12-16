@@ -51,9 +51,15 @@ You can then browse to <http://localhost:3000/>
 
 ## Scripts
 
+- `npm ci`: installs all the dependencies needed for app to work
+
 - `npm start`: starts the application server
 
 - `npm test`: runs the tests
+
+- `npm run test:coverage`: tests the test coverage for whole code basis
+
+- `npm run test:smoketest`: runs the smoketest to perform more advanced testing
 
 - `npm run lint`: runs static code checks
 
