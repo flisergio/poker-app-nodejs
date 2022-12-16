@@ -22,7 +22,7 @@ sap.ui.define([
       })
       if (ok) {
         window.location.replace(
-          "https://flisergio-pokerapp-table.netlify.app/"
+          window.location.origin
         );
       } else {
         const i18n = view.getModel('i18n')

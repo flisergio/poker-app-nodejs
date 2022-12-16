@@ -103,7 +103,7 @@ sap.ui.define([
     },
 
     logout() {
-      window.location.replace(`${window.location.origin}/`)
+      window.location.replace(`${window.location.origin}/login`)
     }
   })
 })
