@@ -5,7 +5,7 @@ import table from './routes/table.js'
 export default ({ tableService }) => {
   const app = express()
 
-  app.use('https://flisergio-pokerapp-login.netlify.app/login', express.static('.www/app/login'))
+  app.use('/login', express.static('.www/app/login'))
 
   app.use(auth())
 

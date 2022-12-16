@@ -10,7 +10,7 @@ sap.ui.define([
       const view = this.getView()
       const model = view.getModel()
       const { username, password } = model.getProperty('/')
-      const { ok } = await fetch('https://flisergio-pokerapp-login.netlify.app/login', {
+      const { ok } = await fetch('/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -21,7 +21,9 @@ sap.ui.define([
         })
       })
       if (ok) {
-        window.location.replace(window.location.origin)
+        window.location.replace(
+          "https://flisergio-pokerapp-table.netlify.app/"
+        );
       } else {
         const i18n = view.getModel('i18n')
         const resourceBundle = i18n.getResourceBundle()
