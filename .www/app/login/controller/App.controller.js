@@ -10,7 +10,7 @@ sap.ui.define([
       const view = this.getView()
       const model = view.getModel()
       const { username, password } = model.getProperty('/')
-      const { ok } = await fetch('/login', {
+      const { ok } = await fetch('/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
