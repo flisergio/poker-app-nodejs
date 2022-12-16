@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "node .www/server.js",
-    "build": "react-scripts build",
+    "build": "webpack",
     "watch": "nodemon --watch lib .www/server.js",
     "lint": "eslint lib test",
     "test": "mocha",
@@ -31,8 +31,9 @@
     "jsonwebtoken": "^8.5.1",
     "lodash.shuffle": "^4.2.0",
     "nodemon": "^2.0.15",
-    "react-scripts": "4.0.3",
     "passport": "^0.5.2",
-    "passport-jwt": "^4.0.0"
+    "passport-jwt": "^4.0.0",
+    "react-scripts": "4.0.3",
+    "webpack": "^4.44.2"
   }
 }
