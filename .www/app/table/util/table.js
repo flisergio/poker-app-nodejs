@@ -1,5 +1,5 @@
 sap.ui.define([], () => {
-  const API_PATH = '/api/v1/table'
+  const API_PATH = '/api/v1'
 
   const _fetch = async (path, options) => {
     const response = await fetch(path, options)
