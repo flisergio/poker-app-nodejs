@@ -1,9 +1,9 @@
 [build]
   command = "CI='' npm run build"
   publish = "/build"
-  base ="/"
+  base ="/.www/app/table"
 
 [[redirects]]
   from = "/*"
-  to = "/.www/app/table/index.html"
+  to = "/index.html"
   status = 200
