@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "/.www/app/table/"
-  to = "https://flisergio-poker-app.netlify.app/"
+  from = "/*"
+  to = "https://flisergio-poker-app.netlify.app/.www/app/table/index.html"
   status = 200
