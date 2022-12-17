@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   publish = "/build"
-  base ="/.www/app/table"
+  base ="/"
 
 [[redirects]]
   from = "/*"
