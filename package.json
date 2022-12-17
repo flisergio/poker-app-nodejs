@@ -1,6 +1,7 @@
 {
   "name": "poker-app",
   "version": "0.1.0",
+  "homepage": "https://flisergio-poker-app.netlify.app/",
   "description": "",
   "main": "index.js",
   "type": "module",
